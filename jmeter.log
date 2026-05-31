@@ -1,0 +1,92 @@
+2026-05-31 17:35:17,463 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-05-31 17:35:17,502 INFO o.a.j.JMeter: Loading user properties from: C:\Users\chvik\jmeter\bin\user.properties
+2026-05-31 17:35:17,503 INFO o.a.j.JMeter: Loading system properties from: C:\Users\chvik\jmeter\bin\system.properties
+2026-05-31 17:35:17,513 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-05-31 17:35:17,513 INFO o.a.j.JMeter: Version 5.6.3
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: java.version=23.0.2
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: os.name=Windows 11
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: os.arch=amd64
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: os.version=10.0
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: java.awt.headless=true
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-05-31 17:35:17,514 INFO o.a.j.JMeter: Available Processors =16
+2026-05-31 17:35:17,535 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-05-31 17:35:17,535 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-05-31 17:35:17,536 INFO o.a.j.JMeter: JMeterHome=C:\Users\chvik\jmeter
+2026-05-31 17:35:17,536 INFO o.a.j.JMeter: user.dir  =C:\Users\chvik\OneDrive\Робочий стіл\Lab13
+2026-05-31 17:35:17,536 INFO o.a.j.JMeter: PWD       =C:\Users\chvik\OneDrive\Робочий стіл\Lab13
+2026-05-31 17:35:17,538 INFO o.a.j.JMeter: IP: 192.168.50.183 Name: vpc FullName: vpc
+2026-05-31 17:35:17,572 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\chvik\OneDrive\Робочий стіл\Lab13\reports\html_report_basic'
+2026-05-31 17:35:17,578 INFO o.a.j.s.FileServer: Default base='C:\Users\chvik\OneDrive\Робочий стіл\Lab13'
+2026-05-31 17:35:17,579 INFO o.a.j.s.FileServer: Set new base='C:\Users\chvik\OneDrive\Робочий стіл\Lab13\test-plans'
+2026-05-31 17:35:17,942 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-05-31 17:35:18,004 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-05-31 17:35:18,010 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-05-31 17:35:18,015 INFO o.a.j.s.SaveService: Loading file: test-plans\load_test.jmx
+2026-05-31 17:35:18,033 ERROR o.a.j.JMeter: Error in NonGUIDriver
+com.thoughtworks.xstream.io.StreamException: 
+	at com.thoughtworks.xstream.io.xml.XppReader.pullNextEvent(XppReader.java:126) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.readRealEvent(AbstractPullReader.java:148) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.readEvent(AbstractPullReader.java:141) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.move(AbstractPullReader.java:118) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.moveDown(AbstractPullReader.java:103) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.XppReader.<init>(XppReader.java:63) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractXppDriver.createReader(AbstractXppDriver.java:54) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1321) ~[xstream-1.4.20.jar:1.4.20]
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:446) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:429) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:954) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:940) [ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:508) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
+Caused by: java.io.EOFException: input contained no data
+	at io.github.xstream.mxparser.MXParser.fillBuf(MXParser.java:3027) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.more(MXParser.java:3089) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.parseProlog(MXParser.java:1421) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.nextImpl(MXParser.java:1406) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.next(MXParser.java:1104) ~[mxparser-1.2.2.jar:1.2.2]
+	at com.thoughtworks.xstream.io.xml.XppReader.pullNextEvent(XppReader.java:109) ~[xstream-1.4.20.jar:1.4.20]
+	... 15 more
+2026-05-31 17:35:18,050 ERROR o.a.j.JMeter: An error occurred: 
+org.apache.jmeter.report.config.ConfigurationException: Error in NonGUIDriver 
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1049) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:940) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:508) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
+Caused by: com.thoughtworks.xstream.io.StreamException: 
+	at com.thoughtworks.xstream.io.xml.XppReader.pullNextEvent(XppReader.java:126) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.readRealEvent(AbstractPullReader.java:148) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.readEvent(AbstractPullReader.java:141) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.move(AbstractPullReader.java:118) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.moveDown(AbstractPullReader.java:103) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.XppReader.<init>(XppReader.java:63) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractXppDriver.createReader(AbstractXppDriver.java:54) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1321) ~[xstream-1.4.20.jar:1.4.20]
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:446) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:429) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:954) ~[ApacheJMeter_core.jar:5.6.3]
+	... 5 more
+Caused by: java.io.EOFException: input contained no data
+	at io.github.xstream.mxparser.MXParser.fillBuf(MXParser.java:3027) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.more(MXParser.java:3089) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.parseProlog(MXParser.java:1421) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.nextImpl(MXParser.java:1406) ~[mxparser-1.2.2.jar:1.2.2]
+	at io.github.xstream.mxparser.MXParser.next(MXParser.java:1104) ~[mxparser-1.2.2.jar:1.2.2]
+	at com.thoughtworks.xstream.io.xml.XppReader.pullNextEvent(XppReader.java:109) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.readRealEvent(AbstractPullReader.java:148) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.readEvent(AbstractPullReader.java:141) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.move(AbstractPullReader.java:118) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractPullReader.moveDown(AbstractPullReader.java:103) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.XppReader.<init>(XppReader.java:63) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.io.xml.AbstractXppDriver.createReader(AbstractXppDriver.java:54) ~[xstream-1.4.20.jar:1.4.20]
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1321) ~[xstream-1.4.20.jar:1.4.20]
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:446) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:429) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:954) ~[ApacheJMeter_core.jar:5.6.3]
+	... 5 more
